@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Install Nginx
+echo "[Install Nginx] Installing Nginx"
+sudo ansible-galaxy install geerlingguy.nginx
+
+# Using playbook and yml to run role
+sudo ansible-playbook geerginx.yml
+
+echo '[Install Nginx] done!'
