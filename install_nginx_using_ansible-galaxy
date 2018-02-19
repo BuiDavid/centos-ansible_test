@@ -5,6 +5,6 @@ echo "[Install Nginx] Installing Nginx"
 sudo ansible-galaxy install geerlingguy.nginx
 
 # Using playbook and yml to run role
-sudo ansible-playbook geerginx.yml
+sudo ansible-playbook geerling_nginx.yml
 
 echo '[Install Nginx] done!'
