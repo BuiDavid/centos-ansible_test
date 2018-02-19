@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Example:
+# ./install_ansbile '2.4.2.0' /etc/ansible/
+# Installs epel-release
+# Updates yum
+
+# Install epel-release
+echo "[Install Ansible] installing epel-release"
+sudo yum -y epel-release
+
+# Update yum
+echo "[Install Ansible] updating yum"
+sudo yum -y update
+
+# Install Ansible and dependencies
+echo "[Install Ansible] Go to Home Folder"
+cd ~/
+echo "[Install Ansible] yum installing Ansible"
+sudo yum -y install ansible
+
+# Check Ansible Version
+echo "[Install Ansible] Checking Ansible version"
+ansible --version
+
+# Install Done
+echo "[Install Ansible] Done!"
+
+
