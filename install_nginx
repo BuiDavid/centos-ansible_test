@@ -16,7 +16,7 @@ ansible-galaxy install bennojoy.nginx
 
 # Start Nginx
 echo "[Install Nginx] Starting Nginx"
-sudo systemctl staart nginx
+sudo systemctl start nginx
 
 # Allow nginx through firewall
 sudo firewall-cmd --permanent --zone=public --add-service=http
