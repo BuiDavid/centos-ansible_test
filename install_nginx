@@ -21,6 +21,8 @@ sudo systemctl start nginx
 # Allow nginx through firewall
 sudo firewall-cmd --permanent --zone=public --add-service=http
 sudo firewall-cmd --permanent --zone=public --add-service=https
+sudo firewall-cmd --permanent --zone=public --add-port=80/tcp 
+sudp firewall-cmd --permanent --zone=public --add-port=80/udp
 sudo firewall-cmd --reload
 
 # Enable Nginx to start automatically in boot
